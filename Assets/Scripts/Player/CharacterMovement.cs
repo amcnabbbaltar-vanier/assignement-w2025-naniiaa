@@ -7,8 +7,8 @@ public class CharacterMovement : MonoBehaviour
 {
     // ============================== Movement Settings ==============================
     [Header("Movement Settings")]
-    [SerializeField] public float baseWalkSpeed = 5f;    // Base speed when walking
-    [SerializeField] private float baseRunSpeed = 8f;     // Base speed when running
+    [SerializeField] public float baseWalkSpeed = 4f;    // Base speed when walking
+    [SerializeField] private float baseRunSpeed = 6f;     // Base speed when running
     [SerializeField] private float rotationSpeed = 10f;   // Speed at which the character rotates
 
     // ============================== Jump Settings =================================
@@ -18,9 +18,9 @@ public class CharacterMovement : MonoBehaviour
 
     [Header("Double Jump Settings")]
     [SerializeField] public bool doubleJumpEnabled = false;  
-    [SerializeField] private float doubleJumpForce = 6f;
-    //private bool hasJumped = false;
-    //private bool hasDoubleJumped = false;
+    [SerializeField] private float doubleJumpForce = 4f;
+    private bool hasJumped = false;
+    private bool hasDoubleJumped = false;
 
     private Animator animator;  // Reference to the character's Animator component
 
@@ -166,29 +166,33 @@ public class CharacterMovement : MonoBehaviour
     /// </summary>
     public void HandleJump()
     {
-        // Apply jump force only if jump was requested and the character is grounded
+
+        // Apply jump force only if jump was requested and the character is grounded and if double jump is true set as false
         if (jumpRequest && IsGrounded)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse); // Apply force upwards
             jumpRequest = false;
-            // hasJumped = true;
+            hasJumped = true;
         }
-        else if (jumpRequest && !IsGrounded && doubleJumpEnabled)
+        else if (jumpRequest && !IsGrounded && doubleJumpEnabled && hasJumped && !hasDoubleJumped)
         {
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0, rb.linearVelocity.z);
             rb.AddForce(Vector3.up * doubleJumpForce, ForceMode.Impulse);
-            //jumpRequest = false;
-            //hasDoubleJumped = true;
+            jumpRequest = false;
+            hasDoubleJumped = true;
+
             if (animator != null)
                 animator.SetTrigger("doFlip");
 
         }
 
-        if (IsGrounded)
+        // Reset jump flags when landing
+        if (IsGrounded && (hasJumped || hasDoubleJumped))
         {
             if (!Input.GetButton("Jump"))
             {
-                jumpRequest = true;
+                hasJumped = false;
+                hasDoubleJumped = false;
             }
         }
     }

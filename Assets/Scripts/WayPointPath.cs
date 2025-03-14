@@ -1,5 +1,7 @@
 using UnityEngine;
-
+/**
+ * NEED TO LEARN MOVING PLATFORMS PHYSICS
+ */
 public class WayPointPath : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created

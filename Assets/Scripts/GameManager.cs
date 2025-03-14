@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     public Boolean isGamePaused = false;
 
     public string MainMenuScene = "MainMenuScene";
-    public string[] LevelScenes = { "Level-1", "Level-2", "Level-3" };
+    public string[] LevelScenes = {"TutorialScene", "Level-1", "Level-2", "Level-3" };
     public string EndScreenScene = "GameOverScreen";
 
     private void Awake()

@@ -369,8 +369,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 165.6, y: 41.8}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 427.95, y: 26.75}
+  m_SizeDelta: {x: 545.0731, y: 53.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &499352226
 MonoBehaviour:
@@ -836,8 +836,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.129, y: -0.23727417}
-  m_SizeDelta: {x: 141.7, y: 141.72}
+  m_AnchoredPosition: {x: -0.0079346, y: -0.0055542}
+  m_SizeDelta: {x: 223.86, y: 272.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1052930731
 MonoBehaviour:
@@ -913,8 +913,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 165.5, y: -11.7}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 428, y: -79}
+  m_SizeDelta: {x: 545.17, y: 50.1196}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1081221944
 MonoBehaviour:
@@ -1094,8 +1094,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1180,8 +1180,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 308, y: 223.1}
-  m_SizeDelta: {x: -889.4922, y: -454.0078}
+  m_AnchoredPosition: {x: 614, y: 322}
+  m_SizeDelta: {x: -1317.5, y: -814.6345}
   m_Pivot: {x: 0.36119464, y: 0.31025216}
 --- !u!114 &1361688486
 MonoBehaviour:
@@ -1230,8 +1230,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1330,10 +1330,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1514,8 +1514,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

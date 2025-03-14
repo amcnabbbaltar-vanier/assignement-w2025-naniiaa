@@ -2866,6 +2866,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4205413272508432948, guid: f84c2fd7c633e0a43882eca2014521c7, type: 3}
+      propertyPath: LevelScenes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205413272508432948, guid: f84c2fd7c633e0a43882eca2014521c7, type: 3}
+      propertyPath: 'LevelScenes.Array.data[4]'
+      value: TutorialScene
+      objectReference: {fileID: 0}
     - target: {fileID: 5632971354912831820, guid: f84c2fd7c633e0a43882eca2014521c7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -103.40106
@@ -3746,7 +3754,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 200306202666999374, guid: 512917daa3381a943b91eb33ab54aa09, type: 3}
       propertyPath: m_UiScaleMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2995139755471292357, guid: 512917daa3381a943b91eb33ab54aa09, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9133,6 +9141,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5350154158508262512, guid: e3fe52d757dbacb43a943a5d311369b8, type: 3}
+      propertyPath: baseRunSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5350154158508262512, guid: e3fe52d757dbacb43a943a5d311369b8, type: 3}
       propertyPath: baseWalkSpeed
       value: 5
       objectReference: {fileID: 0}
@@ -9141,8 +9153,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 734085759}
     - target: {fileID: 5350154158508262512, guid: e3fe52d757dbacb43a943a5d311369b8, type: 3}
+      propertyPath: doubleJumpForce
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5350154158508262512, guid: e3fe52d757dbacb43a943a5d311369b8, type: 3}
       propertyPath: groundCheckDistance
-      value: 2
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 6129578367967161269, guid: e3fe52d757dbacb43a943a5d311369b8, type: 3}
       propertyPath: m_LocalPosition.x

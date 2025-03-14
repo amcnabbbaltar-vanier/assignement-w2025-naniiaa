@@ -7,6 +7,10 @@ using UnityEngine.SceneManagement;
 public class PauseMenuController : MonoBehaviour
 {
     [SerializeField] public GameObject pauseMenuPanel;
+    [SerializeField] public GameObject uIManagerPanel;
+    [SerializeField] public GameObject tutorialPanel;
+
+
 
     private bool isPaused = false;
 
@@ -31,6 +35,8 @@ public class PauseMenuController : MonoBehaviour
 
         if(isPaused)
         {
+            uIManagerPanel.SetActive(false);
+            tutorialPanel.SetActive(false);
             pauseMenuPanel.SetActive(true);
             Time.timeScale = 0f;
             Cursor.lockState = CursorLockMode.None;
@@ -38,6 +44,8 @@ public class PauseMenuController : MonoBehaviour
         }
         else
         {
+            uIManagerPanel.SetActive(true);
+            tutorialPanel.SetActive(true);
             pauseMenuPanel.SetActive(false);
             Time.timeScale = 1f;
             Cursor.lockState = CursorLockMode.Locked;

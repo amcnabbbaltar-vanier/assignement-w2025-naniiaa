@@ -44,8 +44,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b4e03c404f65fe4f9bb5e656c19122f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHealth: 0
+  score: 0
+  gameTime: 0
+  currentLevel: 0
+  isGamePaused: 0
   MainMenuScene: MainMenuScene
   LevelScenes:
+  - TutorialScene
   - Level-1
   - Level-2
   - Level-3

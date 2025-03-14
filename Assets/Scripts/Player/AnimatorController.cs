@@ -22,6 +22,6 @@ public class AnimatorController : MonoBehaviour
     void UpdateAnimator()
     {
         animator.SetFloat("CharacterSpeed", rb.linearVelocity.magnitude);
-        animator.SetBool("IsGrounded", characterMovement.IsGrounded);
+        animator.SetBool("isGrounded", characterMovement.IsGrounded);
     }
 }

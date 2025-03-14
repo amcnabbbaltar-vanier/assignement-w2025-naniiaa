@@ -176,6 +176,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1183,6 +1186,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1712,7 +1718,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &6718690084881166210
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1720,12 +1726,13 @@ Animator:
   m_GameObject: {fileID: 6799155194134901007}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: e89a51ebe0ea2ed4a8efda80e5099a3c, type: 3}
-  m_Controller: {fileID: 9100000, guid: 6deab2304e3cd274db941195d1a79a9e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1fbc152718b0d564a9b818c7d04a21fc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -1793,12 +1800,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f188286ef6f4de438461e99982ba925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 5
-  runSpeed: 8
-  jumpHeight: 2
+  baseWalkSpeed: 4
+  baseRunSpeed: 6
   rotationSpeed: 10
+  jumpForce: 5
   groundCheckDistance: 1.1
-  virtualCamera: {fileID: 0}
+  doubleJumpEnabled: 0
+  doubleJumpForce: 4
+  speedMultiplier: 1
+  groundSpeed: 0
 --- !u!114 &7205333592777089430
 MonoBehaviour:
   m_ObjectHideFlags: 0
